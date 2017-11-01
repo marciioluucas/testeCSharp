@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HelloWorldWF {
-    class Operacao {
+    public class Operacao {
 
-        int soma(int a, int b)
+        public int soma(int a, int b)
         { 
-            return 0;
+            return a + b;
+        }
+
+        public int subtrai(int a, int b)
+        {
+            return a - b;
         }
     }
 }
