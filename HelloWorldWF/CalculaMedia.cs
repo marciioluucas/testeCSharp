@@ -10,7 +10,7 @@ public class CalculaMedia
 
         public void InserirNotaProva(decimal nota)
         {
-        if (this.ContadorPontos < 5)
+        if (this.ContadorPontos < 3)
         {
             this.ContadorProvas++;
             this.SomaProvas += nota;
@@ -24,7 +24,7 @@ public class CalculaMedia
 
         public void InserirPonto(decimal ponto)
         {
-            if (this.ContadorPontos > 4) throw new Exception("Excedeu o limite de pontos no ano");
+            if (this.ContadorPontos > 3) throw new Exception("Excedeu o limite de pontos no ano");
             this.ContadorPontos++;
             this.SomaPontos += ponto;
         }

@@ -9,10 +9,11 @@ namespace HelloWorldWFTest
         [TestMethod]
         public void TestSeAdicionaNotaProva()
         {
-            int cont = 0;
+          
             CalculaMedia cM = new CalculaMedia();
             cM.InserirNotaProva(10);
             cM.InserirNotaProva(5);
+            cM.InserirNotaProva(8);
             cM.InserirNotaProva(8);
             cM.InserirNotaProva(8);
             Assert.AreEqual(4, cM.ContadorProvas);
@@ -27,11 +28,12 @@ namespace HelloWorldWFTest
             cM.InserirNotaProva(8);
             cM.InserirNotaProva(8);
             cM.InserirNotaProva(9);
+            cM.InserirNotaProva(9);
             cM.InserirPonto(1);
             cM.InserirPonto(1);
             cM.InserirPonto(1);
             cM.InserirPonto(1);
-           
+            cM.InserirPonto(1);
 
             Assert.AreEqual(4, cM.ContadorPontos);
         }
