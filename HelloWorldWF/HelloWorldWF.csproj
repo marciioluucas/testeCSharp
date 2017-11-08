@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculaMedia.cs" />
+    <Compile Include="ContaBancaria.cs" />
     <Compile Include="ConversorTemperatura.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
